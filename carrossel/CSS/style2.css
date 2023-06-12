@@ -1,0 +1,20 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+

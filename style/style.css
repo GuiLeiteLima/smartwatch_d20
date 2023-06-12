@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+    background: url(../relogios/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    height: 100vh;
+    transition: 2s all;
+}
+/*================================================================*/
+body.dark-mode {
+    background: url(../relogios/background-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    transition: 2s all;
+    
+    #toggle-mode{
+        background-image: url(../icons/sol.png);
+    }
+
+    .container_acessorios{
+        color: #fff;
+    }
+
+    #comprar{
+        background-color: #4b8bb1;
+    }
+
+
+
+      #D20light{
+        display: none;
+      }
+      .sombra{
+        display: none;
+      }
+
+      #D20dark{
+        display: flex;
+        position: absolute;
+      }
+
+      .sombra2{
+        background-color: #1b1b1b;
+        width: 250px;
+        height: 7px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 0 8px 9px #1b1b1b;
+        animation-name: sombra;
+        animation: sombra 3s infinite;
+        bottom: 20px;
+        right: 235px;
+    }
+    
+    @keyframes sombra2{
+        0%{width:230px;}
+        50%{width: 290px; right: 205px;}
+        100%{width: 230px;}
+    }
+
+      
+
+      .rodape{
+        background-color: #1b1b1b88;
+        color: #ffffff;
+        transition: 2s all;
+    }
+
+    .txt #titulo{
+        color: #ffffff;
+        transition: 2s all;
+    
+    }
+
+    #compra a{
+        background-color: #316788;
+    }
+
+    #compra a:hover{
+        background-color:   #7ca4bd ;
+    }
+
+    #titulo_funcoes{
+        color: #fff;
+        transition: 2s all;
+    }
+
+  }
+  /*================================================================*/
+
+
+
+  #toggle-mode{
+    background: url(../icons/lua.png);
+    background-repeat: repeat-y;
+    padding: 12px;
+    top: 0px;
+    font-size: large;
+    color: #ffffff;
+    margin-left: 5px;
+    transition: .5s linear;
+  }
+
+  #toggle-mode:hover{
+    background-color: #7371fe;
+    cursor: pointer;
+  }
+
+
+title{
+    display: none;
+}
+
+
+
+/*==========================animação===============================*/
+
+#box{
+    
+    border-radius:1000px;
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    top: 50px ;
+    right: 5%;
+}
+
+#D20light{
+    width: 500px;
+    position: absolute;
+    animation-name: flutuar;
+    animation: flutuar 3s infinite;
+    }
+
+    #D20dark{
+        width: 350px;
+        right: 170px;
+        display: none;
+        position: absolute;
+        animation-name: flutuar2;
+        animation: flutuar2 3s infinite;
+    }
+    @keyframes flutuar2{
+    
+        0%{top: 18%;}
+        50%{top: 24%;}
+        100%{top: 18%;}
+    
+    }
+    
+    
+
+@keyframes flutuar{
+    
+    0%{top: 5%;}
+    50%{top: 12%;}
+    100%{top: 5%;}
+
+}
+
+
+
+.sombra{
+    background-color: #1b1b1b;
+    width: 250px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 8px 9px #1b1b1b;
+    animation-name: sombra;
+    animation: sombra 3s infinite;
+    bottom: 20px;
+    right: 240px;
+}
+
+@keyframes sombra{
+    0%{width:230px;}
+    50%{width: 290px; right: 210px;}
+    100%{width: 230px;}
+}
+
+
+/*================================================================*/
+
+.txt{
+    margin-top: 6%;
+    margin-left: 13.2%;
+    width: 600px;
+    height: 300px;
+}
+
+.txt p{
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: left ;
+    
+}
+
+.txt #titulo{
+    position: relative;
+    color: #000000;
+
+}
+
+#titulo{
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    
+}
+
+#compra{
+    
+    position: absolute;
+    top: 65%;
+    left: 12.3%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.botão{
+   display: flex;
+   justify-content: center;
+}
+
+#compra a{
+    background-color:#07527e ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    width:200px;
+    height: 30px;
+    border-radius: 0px 10px 0px 10px;
+    align-items: center;
+    margin: 10px;
+    transition: .2s linear
+}
+
+#compra a:hover{
+ 
+    background-color: #043d5e ;
+}
+
+/*================================================================*/
+
+.menu{
+    background-color: #7371fe59 ;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 51px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.menu img{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 40px;
+}
+
+.menu ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.menu ul li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 1px;
+    transition: .2s linear;
+    padding: 13px;
+}
+
+.menu ul li a:hover{
+    background-color: #7371fe;
+    
+}
+
+
+/*================================================================*/
+
+
+.video{
+    width: 400px;
+    margin: 100px 30px;
+    height: 300px;
+
+    border-radius: 30px;
+}
+
+#box_video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video:hover{
+    transition: .2s linear;
+    box-shadow: 0px 0px 30px #f3f3f3;
+}
+
+
+/*===========================rodapé====================================*/
+
+#rodape_index{
+    margin-top: 15%;
+}
+#rodape_app{
+    margin-top: 3%;
+}
+
+
+.rodape{
+    background-color: #afafaf59;
+    color: #1b1b1b;
+    font-style: inherit;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 2s all;
+
+}
+.rodape ul{
+    margin-left: 400px;
+    font-size: medium;
+}
+
+.rodape .icons .icone{
+    
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: baseline;
+    width: 25px;
+    height: auto;
+    margin-right: 500px;
+}
+
+.rodape .icons .icone:hover{
+    background-color: rgba(65, 65, 65, 0.397);
+    padding: 2px;
+    border-radius: 5px;
+    
+}
+
+#insta{
+    text-decoration: none;
+    color: #0b79b9;
+}
+
+#insta:hover{
+    color: #07659b;
+}
+/*===========================APP====================================*/
+
+
+#tela2{
+    display: grid;
+    grid-template-columns: repeat(4,.3fr);
+    align-items: center;
+
+    margin-left: 8%;
+
+    height: 90vh;
+}
+
+
+
+
+.screen{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    transition: .3s linear;
+}
+.screen:hover{
+    width: 250px;
+    
+}
+
+#download{
+    background: linear-gradient( #043d5e, #07527e);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 42% 0px 42%;
+    border-radius: 5px;
+    margin-top: 0px;
+    transition: .2s linear;
+}
+
+#download:hover{
+    background: linear-gradient(#07659b,#0b79b9);
+    box-shadow: 0px 0px 10px #fff;
+    
+}
+
+/*=====================================================================*/
+
+
+.acessorios{
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    justify-content: center;
+}
+
+
+.container_acessorios{
+    background-color: #7371fe59 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    border-radius: 0px 30px 0px 30px;
+    width: 250px;
+    height: 300px;
+    margin: 90px 10px 0px 10px;
+    
+
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_acessorios:hover{
+    transition: .2s;
+    box-shadow: 0px 0px 10px white;
+}
+
+
+.container_acessorios img{
+    max-width: 150px;
+    max-height: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container_acessorios img:hover{
+    padding: 1px;
+}
+
+.comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comprar{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #07527e;
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+}
+
+#titulo_funcoes{
+    color: #000000;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    transition: 2s all;
+}
+
+#h1_funcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10% ;
+}
+
+#sensor{
+    background-color: #0b79b952;
+    color: #ffffff;
+    margin-top: 10%;
+    width: 100% ;
+    height: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    
+}
+
+#sensor img{
+
+    width: 300px;
+    height: 320px;
+    margin-left: 50px;
+}
+
+#sensor div{
+    width: 800px;
+}
+
+
+/*=====================================================================*/
+
+#cont_coment{
+    background-color: #7371fe59 ;
+    padding: 20px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 10px #7371fe;
+}
+
+#cont_coment ul li{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    background-color: transparent;
+    border-bottom: solid 2px #ffffff;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/*=====================================================================*/
+input[type=text]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+input[type=email]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: medium;
+
+}
+/*=====================================================================*/
+
+#avalie{
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#avalie label{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+input[type=range] {
+    appearance: none;
+    border: 1px solid white;
+    width: 200px;
+    height: 0px;
+    border-radius: 10px 0px;
+    background-image: linear-gradient( 135deg, #610e0e7a 40%, #00677979 65%);
+}
+
+#display{
+    background-color: #7371fe8f;
+    font-size: x-large;
+    border: none;
+    width: 38px;
+    border-radius: 100px;
+}
+#display_numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon_ft{
+    width: 20px;
+    height: 20px;
+}
+
+textarea{
+    background-color: transparent;
+    color: #fff;
+    border: #ffffff solid 1px;
+    margin-top: 2%;
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-size: large;
+    width: 100%;
+}
+
+
+input::placeholder {
+    color: #ffffff;
+  }
+
+  textarea::placeholder{
+    justify-content: left;
+    color: #ffffff;
+    font-size: large;
+  }
+
+  #corpo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  #enviar{
+    background-color: #0b79b9;
+    color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  #enviar:hover{
+    background-color: #07659b;
+    transition: .5s all;
+  }
+
+
+  /*=========================================================================*/
+
+  #notificacao{
+    background-color: #0b79b97c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+
+    height: 300px;
+  }
+
+  #notificacao img{
+    margin-right: 50px;
+    width: auto;
+    height: 300px;
+  }
+  
+  #notificacao div{
+    width: 750px;
+  }
+
+  /*=========================================================================*/
+  
+  #wallpaper{
+    background-color: #0b79b952;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+
+    height: 300px;
+  }
+
+  #wallpaper img{
+    height: auto;
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  #wallpaper div{
+    width: 700px;
+  }
+
+
+

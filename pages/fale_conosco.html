@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="../icons/smartwatch.png">
+    <link rel="stylesheet" href="../style/style.css">
+    <script>
+        function myFunction() {
+          let x = document.getElementById("number").value;
+          document.getElementById("display").value = x;
+    
+        }
+      </script>
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="../index.html"><img src="../icons/smartwatch.png" alt=""></a>
+        <ul>
+        
+        <li><a href="funcoes.html">Funções</a></li>
+        <li><a href="video.html">Vídeos</a></li>
+        <li><a href="app.html">Aplicativo</a></li>
+        <button id="toggle-mode"></button>
+        <script src="../pluglin/script.js"></script>
+    </ul>
+    </div>
+
+<div id="corpo">
+    <div id="cont_coment">
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+
+        <div id="avalie">
+            <label for="">
+                <img src="../icons/triste.png" class="icon_ft">
+                    <input name="valuey" id="number" type="range" value="5" step="1" min="0" max="10" oninput="display.value=this.value" />
+                    
+                <img src="../icons/feliz.png" class="icon_ft"></label>
+                
+        </div>
+        <div id="display_numero">
+            <input type="text" id="display" readonly ;>
+        </div>
+        <textarea name="" placeholder="Observação..." id="comente" cols="30" rows="10"></textarea>
+        <button id="enviar">Enviar</button>
+    </div>
+</div>
+
+<footer class="rodape" id="rodape_fc">
+    <p>Site desenvolvido como projeto final da disciplina de Introdução à Tecnologia Web<br>
+        1º período do curso de Sistema de Informação - Semestre: 2023.1<br>
+        Centro Universitário do Rio São Francisco - UniRios / Paulo Afonso - BA<br>
+        Aluno(a): Guilherme Leite Lima - Instagram: <a href="https://encurtador.com.br/xHI08" id="insta" target="_blank">@guileite_lima</a> <p>
+    
+</footer>
+</body>
+</html>
